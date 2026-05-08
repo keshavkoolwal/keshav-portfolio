@@ -1,0 +1,366 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keshav Koolwal | Automotive Technology Portfolio</title>
+  <meta name="description" content="Portfolio of Keshav Koolwal, an automotive technology and engineering student focused on crashworthiness, vehicle dynamics, CAE and race-inspired product development.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="speedCanvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Keshav Koolwal home">
+      <span class="brand-mark">KK</span>
+      <span>Keshav Koolwal</span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Automotive Technology + Engineering</p>
+        <h1 class="hero-name">Keshav Koolwal</h1>
+        <p class="hero-quote">Designing safer, smarter, more thrilling mobility.</p>
+        <p class="hero-text">
+          I am Keshav, an automotive engineer focused on crashworthiness, occupant safety,
+          vehicle dynamics, EV systems, ADAS, and the beautiful chaos between CAD, CAE, and real hardware.
+        </p>
+        <div class="hero-tags" aria-label="Engineering focus areas">
+          <span>Crash CAE</span>
+          <span>Mechanical Design</span>
+          <span>Vehicle Dynamics</span>
+        </div>
+        <div class="hero-actions">
+          <a class="button primary" href="#experience">View Work</a>
+          <a class="button secondary" href="https://www.linkedin.com/in/keshav-koolwal-automotive-enthusiast" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="cockpit" aria-label="Interactive automotive dashboard">
+        <div class="dash-top">
+          <span>Live Portfolio Mode</span>
+          <button id="boostButton" type="button">Boost</button>
+        </div>
+        <div class="speedometer">
+          <div class="speed-ring">
+            <span id="speedValue">72</span>
+            <small>km/h ideas</small>
+          </div>
+        </div>
+        <div class="telemetry-grid">
+          <div>
+            <span>Focus</span>
+            <strong>Crash Safety</strong>
+          </div>
+          <div>
+            <span>Tools</span>
+            <strong>CAE + CAD</strong>
+          </div>
+          <div>
+            <span>Drive</span>
+            <strong>EV + ADAS</strong>
+          </div>
+          <div>
+            <span>Track</span>
+            <strong>FSAE</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro-band" aria-label="Profile highlights">
+      <div class="stat">
+        <strong>University of Michigan</strong>
+        <span>Automotive Technology and Engineering</span>
+      </div>
+      <div class="stat">
+        <strong>3.933 / 4.0</strong>
+        <span>Graduate coursework GPA listed publicly</span>
+      </div>
+      <div class="stat">
+        <strong>Safety + Dynamics</strong>
+        <span>Crashworthiness, occupant protection, controls</span>
+      </div>
+    </section>
+
+    <section class="section profile-section" aria-label="What fuels me">
+      <figure class="profile-photo">
+        <img src="assets/keshav-profile.jpg" alt="Keshav Koolwal portrait">
+      </figure>
+      <div class="profile-copy">
+        <p class="eyebrow">What Fuels Me</p>
+        <h2>Engineering Sustainable, Safer Mobility With First-Principles Grit</h2>
+        <p class="section-copy">
+          I am a self-motivated, innovative automotive engineer who thrives in fast-paced environments.
+          I am growing toward crashworthiness and occupant safety engineering while also focusing on
+          mechanical design, new software, and the skills that help turn ideas into working systems.
+        </p>
+        <p class="section-copy">
+          I enjoy developing new technologies and products, including novel work such as Braille Box and
+          a Heliyon pre-print on autonomous vehicle accident analysis. I believe engineering does more
+          than make things work; it can make daily life more efficient, sustainable, and purposeful.
+        </p>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Work Experience</p>
+        <h2>Engineering Roles Across Safety, Dynamics, and Product Hardware</h2>
+      </div>
+      <div class="experience-grid">
+        <article class="experience-card">
+          <figure class="card-media">
+            <img src="assets/experience-5.jpg" alt="Livaq electric ATV chassis and suspension work">
+          </figure>
+          <div class="experience-meta">
+            <span>EV chassis and assembly</span>
+            <strong>Livaq</strong>
+          </div>
+          <h3>Mechanical Chassis Design and Assembly Intern</h3>
+          <ul>
+            <li>Designed an ATV suspension system by optimizing 3D CAD and validating with FEA, improving driving dynamics by 15%.</li>
+            <li>Applied Design for Assembly principles to tire and brake assemblies, producing a production-ready design that accelerated completion by 12 days.</li>
+          </ul>
+        </article>
+        <article class="experience-card featured">
+          <div class="experience-meta">
+            <span>Occupant safety and crashworthiness</span>
+            <strong>University of Michigan / UMTRI</strong>
+          </div>
+          <h3>Research Assistant and Mechanical Department Assistant</h3>
+          <figure class="experience-video-pair" aria-label="University of Michigan occupant safety simulations">
+            <div class="paired-video">
+              <video class="occupant-video" src="assets/small-female-occupant.mp4" controls autoplay muted loop preload="metadata" playsinline aria-label="Small female occupant safety simulation video"></video>
+              <figcaption>Small female occupant safety</figcaption>
+            </div>
+            <div class="paired-video">
+              <video class="occupant-video" src="assets/large-male-occupant.mp4" controls autoplay muted loop preload="metadata" playsinline aria-label="Large male occupant safety simulation video"></video>
+              <figcaption>Large male occupant safety</figcaption>
+            </div>
+          </figure>
+          <ul>
+            <li>Built LS-DYNA crash setups for e-scooter rider scenarios using SUV and GHBMC models to support NHTSA and UMTRI safety recommendations.</li>
+            <li>Analyzed crash data across angle and speed variations, including HIC 15, chest deflection, and knee-thigh injury metrics.</li>
+            <li>Conceptualized a self-balancing unicycle prototype with GD&amp;T drawings, FEA validation, fabrication support, and DFM improvements.</li>
+          </ul>
+        </article>
+        <article class="experience-card">
+          <figure class="card-media logo-media dark-logo">
+            <img class="brand-logo gekot-logo" src="assets/gekot-logo.jpg" alt="Gekot Robotics logo">
+          </figure>
+          <div class="experience-meta">
+            <span>ADAS sensing and dynamics</span>
+            <strong>Gekot Robotics Inc.</strong>
+          </div>
+          <h3>Mechanical Design and ADAS Dynamics</h3>
+          <ul>
+            <li>Designed and FEA-validated sensor mounts with modal analysis to reduce vibration and improve sensor data quality by 10%.</li>
+            <li>Calibrated mmWave radar with software and supplier teams for real-time pedestrian detection with 80% point-cloud accuracy.</li>
+          </ul>
+        </article>
+        <article class="experience-card">
+          <figure class="card-media logo-media">
+            <img class="brand-logo round-logo" src="assets/experience-4.jpg" alt="DRDO RCI logo">
+          </figure>
+          <div class="experience-meta">
+            <span>Robotics and dynamics</span>
+            <strong>DRDO RCI</strong>
+          </div>
+          <h3>Mechanical Design and Robotics Dynamics Intern</h3>
+          <ul>
+            <li>Optimized a self-balancing system using GD&amp;T and Six Sigma methods in CAD under limited-resource prototype constraints.</li>
+            <li>Generated FEA stress analysis and rapid SOLIDWORKS redesigns during critical test cycles.</li>
+            <li>Improved DAQ processing through LabVIEW-Python integrated control, enabling 50% faster data assessment.</li>
+          </ul>
+        </article>
+        <article class="experience-card">
+          <figure class="card-media logo-media">
+            <img class="brand-logo volvo-logo" src="assets/volvo-logo.svg" alt="Volvo logo">
+          </figure>
+          <div class="experience-meta">
+            <span>Chassis safety and manufacturing</span>
+            <strong>Volvo R&amp;D India</strong>
+          </div>
+          <h3>Mechanical Design / Safety Chassis Intern</h3>
+          <ul>
+            <li>Designed chassis side members with GD&amp;T and CAD from legacy designs, producing a manufacturing-compatible result.</li>
+            <li>Documented drawings to ASME Y14.5 engineering requirements for 80% of suspension components.</li>
+            <li>Supported CNC, stamping, quality control, Cpk work, and field process improvements using Six Sigma methods.</li>
+          </ul>
+        </article>
+        <article class="experience-card">
+          <figure class="card-media video-media">
+            <iframe
+              src="https://www.youtube.com/embed/lZfSFr6xwoU?start=26&amp;end=57&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=lZfSFr6xwoU&amp;playsinline=1&amp;rel=0&amp;modestbranding=1"
+              title="Team Uttejit FSAE video"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+            <a class="video-fallback" href="https://www.youtube.com/watch?v=lZfSFr6xwoU&amp;t=26s" target="_blank" rel="noreferrer">Open on YouTube</a>
+          </figure>
+          <div class="experience-meta">
+            <span>Formula Student vehicle systems</span>
+            <strong>Team Uttejit FSAE</strong>
+          </div>
+          <h3>Vehicle Dynamics Lead and Safety Design Engineer</h3>
+          <ul>
+            <li>Led an 80-member team across chassis, brakes, and suspension systems for a Formula Student vehicle.</li>
+            <li>Developed suspension architecture that improved vehicle handling and stability by 22%, then iterated A-arm positions for another 5% handling gain.</li>
+            <li>Reduced brake disc weight by 23 grams through topology optimization; placed 2nd in Business Presentation and 5th overall at FSAE India.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Projects</p>
+        <h2>Project Work Built Around Motion, Risk, and Control</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-icon">01</div>
+          <h3>Autonomous Accident Severity Analysis</h3>
+          <p>Research on two autonomous vehicle accidents, exploring severity, avoidance, and the messy handoff between machine intelligence and road reality.</p>
+          <span>Publication &middot; Heliyon &middot; Safety</span>
+          <a class="project-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4634135" target="_blank" rel="noreferrer">View Heliyon Publication</a>
+        </article>
+        <article class="project-card">
+          <figure class="card-media video-media">
+            <video src="assets/escooter-crash-results.mp4" controls preload="metadata" playsinline aria-label="E-scooter crash preliminary setup results video"></video>
+          </figure>
+          <div class="project-icon">02</div>
+          <h3>E-Scooter Crash Simulation</h3>
+          <p>Set up frontal crash scenarios with SUV and GHBMC rider models, using LS-DYNA analysis to study injury response across angle and speed variations.</p>
+          <span>LS-DYNA &middot; GHBMC &middot; Safety</span>
+        </article>
+        <article class="project-card">
+          <figure class="card-media video-media" data-carousel aria-label="Occupant restraint simulation video carousel">
+            <div class="card-carousel-viewport">
+              <video class="card-carousel-image occupant-video active" src="assets/small-female-occupant.mp4" controls preload="metadata" playsinline aria-label="Small female occupant restraint simulation video"></video>
+              <video class="card-carousel-image occupant-video" src="assets/large-male-occupant.mp4" controls preload="metadata" playsinline aria-label="Large male occupant restraint simulation video"></video>
+            </div>
+            <div class="carousel-controls compact">
+              <button class="carousel-button" type="button" data-carousel-prev aria-label="Previous occupant simulation video">&lsaquo;</button>
+              <div class="carousel-dots" aria-hidden="true"></div>
+              <button class="carousel-button" type="button" data-carousel-next aria-label="Next occupant simulation video">&rsaquo;</button>
+            </div>
+          </figure>
+          <div class="project-icon">03</div>
+          <h3>Small Female Restraint Improvement</h3>
+          <p>Evaluated restraint-system changes for a small female occupant model with attention to HIC 15, chest deflection, and knee-thigh injury outcomes.</p>
+          <span>Crashworthiness &middot; Occupant Protection</span>
+        </article>
+        <article class="project-card">
+          <figure class="card-media" data-carousel aria-label="Braille Box image carousel">
+            <div class="card-carousel-viewport">
+              <img class="card-carousel-image active" src="assets/project-7.jpg" alt="Braille Box CAD model">
+              <img class="card-carousel-image" src="assets/project-9.jpg" alt="Braille Box electronics prototype">
+            </div>
+            <div class="carousel-controls compact">
+              <button class="carousel-button" type="button" data-carousel-prev aria-label="Previous Braille Box image">&lsaquo;</button>
+              <div class="carousel-dots" aria-hidden="true"></div>
+              <button class="carousel-button" type="button" data-carousel-next aria-label="Next Braille Box image">&rsaquo;</button>
+            </div>
+          </figure>
+          <div class="project-icon">04</div>
+          <h3>Braille Box</h3>
+          <p>Assistive technology project focused on practical product design, accessible interaction, and human-centered engineering beyond the vehicle stack.</p>
+          <span>Accessibility &middot; Product Design</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section split-section">
+      <div>
+        <p class="eyebrow">Toolbox</p>
+        <h2>Engineering Stack</h2>
+        <p class="section-copy">
+          A resume-backed mix of mechanical design, crash safety CAE, vehicle dynamics, manufacturing, validation, and coding.
+          This is the zone where CAD, simulation, controls, and hardware start behaving like one system.
+        </p>
+      </div>
+      <div class="skill-board">
+        <button class="skill-chip active" data-skill="Mechanical Design">Mechanical Design</button>
+        <button class="skill-chip" data-skill="Crash Safety CAE">Crash Safety CAE</button>
+        <button class="skill-chip" data-skill="Vehicle Dynamics">Vehicle Dynamics</button>
+        <button class="skill-chip" data-skill="Controls &amp; ADAS">Controls &amp; ADAS</button>
+        <button class="skill-chip" data-skill="Manufacturing">Manufacturing</button>
+        <button class="skill-chip" data-skill="Testing &amp; Validation">Testing &amp; Validation</button>
+        <button class="skill-chip" data-skill="Coding &amp; Data">Coding &amp; Data</button>
+        <button class="skill-chip" data-skill="PLM &amp; Documentation">PLM &amp; Documentation</button>
+        <div class="skill-detail" id="skillDetail">
+          <h3>Mechanical Design</h3>
+          <p>SolidWorks, Fusion 360, CATIA, AutoCAD, 3D CAD, 2D drawings, GD&amp;T, ASME Y14.5, packaging, chassis parts, suspension hardware, and prototype design.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="journey" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Engineering Journey</p>
+        <h2>Where the Work Has Taken Me</h2>
+      </div>
+      <ol class="timeline">
+        <li>
+          <span>2020 - 2024</span>
+          <strong>Vellore Institute of Technology</strong>
+          <p>Mechanical engineering foundation, design work, vehicle projects, and the first serious dive into automotive systems.</p>
+        </li>
+        <li>
+          <span>2022 - 2023</span>
+          <strong>Team Uttejit FSAE</strong>
+          <p>Vehicle dynamics lead and safety design engineer, turning theory into competition-ready tradeoffs.</p>
+        </li>
+        <li>
+          <span>2023</span>
+          <strong>DRDO Internship</strong>
+          <p>Robotics dynamics and mechanical design exposure in a defense R&D environment.</p>
+        </li>
+        <li>
+          <span>2024 - 2025</span>
+          <strong>University of Michigan</strong>
+          <p>Graduate work in vehicle dynamics, crashworthiness, controls, hybrid EVs, design optimization, and integrated vehicle systems.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div>
+        <p class="eyebrow">Pit Lane</p>
+        <h2>Let's Build What Moves Next</h2>
+        <p class="section-copy">
+          I am interested in roles and collaborations across vehicle safety, EV platforms, chassis systems,
+          CAE, ADAS, robotics, and automotive product development.
+        </p>
+      </div>
+      <div class="contact-actions">
+        <a class="button primary" href="mailto:keshavkoolwal@example.com">Email Me</a>
+        <a class="button secondary" href="https://medium.com/@keshavkoolwal" target="_blank" rel="noreferrer">My Blogs</a>
+        <a class="button secondary" href="https://sites.google.com/view/keshavkoolwal/home" target="_blank" rel="noreferrer">Current Site</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Designed for GitHub Pages.</span>
+    <span>Replace placeholder email before publishing.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
