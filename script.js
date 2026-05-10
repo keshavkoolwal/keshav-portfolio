@@ -6,7 +6,7 @@ const skillDetail = document.querySelector("#skillDetail");
 const skillChips = document.querySelectorAll(".skill-chip");
 const carousels = document.querySelectorAll("[data-carousel]");
 const zoomElements = document.querySelectorAll(
-  ".section-heading, .stat, .profile-photo, .profile-copy, .experience-card, .project-card, .skill-board, .timeline li, .contact-section > div"
+  ".section-heading, .stat, .profile-photo, .profile-copy, .experience-card, .project-card, .course-card, .skill-board, .timeline li, .contact-section > div"
 );
 
 const skillCopy = {
