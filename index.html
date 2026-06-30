@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <canvas id="speedCanvas" aria-hidden="true"></canvas>
+  <canvas id="automotiveScene" aria-hidden="true"></canvas>
 
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Keshav Koolwal home">
@@ -116,12 +116,22 @@
       </div>
     </section>
 
-    <section id="experience" class="section">
+    <section id="experience" class="section experience-orbit-section">
       <div class="section-heading">
         <p class="eyebrow">Work Experience</p>
         <h2>Engineering Roles Across Safety, Dynamics, and Product Hardware</h2>
       </div>
-      <div class="experience-grid">
+      <div class="experience-orbit-shell" tabindex="0" aria-label="Rotating work experience showcase">
+        <div class="experience-orbit-controls">
+          <button id="experiencePrev" type="button" aria-label="Previous experience">&larr;</button>
+          <div>
+            <span>Focused card &middot; &uarr;&darr; scroll details</span>
+            <strong id="experienceOrbitStatus">Livaq</strong>
+          </div>
+          <button id="experienceNext" type="button" aria-label="Next experience">&rarr;</button>
+        </div>
+        <div class="experience-orbit-progress" id="experienceOrbitProgress" aria-hidden="true"></div>
+        <div class="experience-grid">
         <article class="experience-card">
           <figure class="card-media">
             <img src="assets/experience-5.jpg" alt="Livaq electric ATV chassis and suspension work">
@@ -225,6 +235,7 @@
             <li>Reduced brake disc weight by 23 grams through topology optimization; placed 2nd in Business Presentation and 5th overall at FSAE India.</li>
           </ul>
         </article>
+        </div>
       </div>
     </section>
 
@@ -482,6 +493,9 @@
    
   </footer>
 
+  <script src="automotive-scene.js"></script>
+  <script src="motion.js"></script>
+  <script src="experience-orbit.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
